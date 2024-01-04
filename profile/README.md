@@ -1,8 +1,8 @@
 # khaaliDimaag
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus neque quis dui mattis, in ultrices dolor iaculis. Cras pulvinar quam sed ultrices posuere.
+khaaliDimaag is currently on a hiatus. If you'd like to contact us, please use [this link](https://kdio.xyz/contact).
 
-## Current Projects
+## Planned Projects
 
 **products**
 - [ ] `ffreed` An Account Aggregator app using RBI's FIU Module. Provide users insight into their finances and help them gain financial [f]freedom.
