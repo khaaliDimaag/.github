@@ -48,14 +48,14 @@ and everything.
 | $1110$ | doing-business | how do we ensure the protocol makes money, or is anti-fragile? |
 | $1111$ | release-announcement | fuck it, ship it! |
 
-### Place Value Meanings
+### Place Value and Tracks
 
-| Place Value | $x=0$ | $x=1$ | _vibe_ |
-| :---: | --- | --- | --- |
-| $x...$ | exploration | execution | what phase is the discussion in? |
-| $.x..$ | | | where is this discussion "tethered"? |
-| $..x.$ | | | which layer is this discussion on? |
-| $...x$ | | | what is the _state_ of this discussion? |
+| Place Value | $x=0$ | $x=1$ | track | _vibe_ |
+| :---------: | ----- | ----- | ----- | ------ |
+| $x...$ | exploration | execution | phase | what _phase_ is the discussion in? |
+| $.x..$ | self | world | tether | where is this discussion _tethered_? |
+| $..x.$ | foundational | manifestation | layer | which _layer_ is this discussion on? |
+| $...x$ | intrinsic | extrinsic | how is this discussion _oriented_? |
 
 One thing to note here is that the discussion category with $0$ is deliberated upon first, and the 
 bit is "flipped" once the discourse naturally runs its course. This should also illustrate how a 
