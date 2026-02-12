@@ -29,24 +29,28 @@ and everything.
 
 ### Discussion Categories
 
-| Mapping | Category Name | Description / Use |
-| :---: | :--- | --- |
-| $0000$ | thought-bubble | an idea; concepts of a plan |
-| $0001$ | thought-bubble | a more structured and reasoned idea |
-| $0010$ | onboarding | strategies to reduce friction for users to leverage the protocol |
-| $0011$ | context-switch | how we fit into the relevant domain or context |
-| $0100$ | its-ethical-ethical | with great power, comes great responsibility |
-| $0101$ | outsiders-forum | speak less, read more! |
-| $0110$ | marketing-stunts | how we occupy mindshare |
-| $0111$ | thanks-obama | all _democratic_ polls conducted here |
-| $1000$ | incentive-design | all things regarding mechanism design, tokenomics, and game theory |
-| $1001$ | experiment-design | |
-| $1010$ | user-experience | mapping user flows and journeys |
-| $1011$ | interface-design | all things related to the clients interacting with the protocol |
-| $1100$ | protocol-infra | any updates to the core protocol needed |
-| $1101$ | protocol-security | consideration of all things security, including user error! |
-| $1110$ | doing-business | how do we ensure the protocol makes money, or is anti-fragile? |
-| $1111$ | release-announcement | fuck it, ship it! |
+| Mapping | Category Name | Description | When to use? |
+| :-----: | :------------ | ----------- | ------------ |
+| $0000$ | thought-bubble | an idea; the concepts of a plan | half baked features begin here |
+| $0001$ | napkin-math | a more structured and reasoned out idea | feature ideas may also begin here but have a higher bar of acceptance |
+| $0010$ | onboarding | strategies to reduce friction for users to leverage kdio | when discussing how new users discover, access, and start using a feature |
+| $0011$ | context-switch | how kdio fits inside a different domain | does the new feature enable kdio to operate in a different domain? |
+| $0100$ | its-ethical-ethical | with great power, comes great responsibility | to consider the ethical implications of this new idea |
+| $0101$ | outsiders-forum | speak less, read more! | could be used as a customer support channel |
+| $0110$ | marketing-stunts | how we occupy mindshare | when discussing positioning, narrative, and public-facing communication strategies |
+| $0111$ | thanks-obama | all _democratic_ polls conducted here | when the discussion reaches a stage requiring some form of voting, either internally, or publically |
+| $1000$ | incentive-design | all things regarding mechanism design, tokenomics, and game theory | to discuss what this new idea will enable / disable |
+| $1001$ | validation-framework | validating the idea and assumptions | use this to talk about how we validate our assumptions and track success |
+| $1010$ | user-experience | mapping user flows and journeys | to talk about e2e user experiences |
+| $1011$ | interface-design | all things related to the clients interacting with the protocol | how do we make sure that anyone may build a client? |
+| $1100$ | protocol-infra | any updates to the core protocol needed | to talk about how or if this idea adds any value to core infra or protocol |
+| $1101$ | protocol-security | consideration of all things security, including user error! | when evaluating attack vectors, failure modes, edge cases, and defensive measures |
+| $1110$ | doing-business | how do we ensure the protocol makes money, or is anti-fragile? | to discuss revenue streams from this idea |
+| $1111$ | release-announcement | fuck it, ship it! | the last step of discussions, talking about how we announce this new feature post implementation |
+
+> [!IMPORTANT]
+> Note that implementation of the idea/feature may happen while the discussions are taking place as
+> it moves through the different discussion categories
 
 ### Place Value and Tracks
 
