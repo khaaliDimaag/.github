@@ -1,0 +1,231 @@
+title: "[onboarding] "
+labels: ["0010", "onboarding"]
+body:
+
+  # --- EXPLAINER ---
+
+  - type: markdown
+    attributes:
+      value: |
+        ## onboarding `0010`
+
+        _strategies to reduce friction for users to leverage kdio_
+
+        This category is about **how new users discover, access, and start using a feature**.
+        If you're thinking about first impressions, entry points, friction reduction,
+        progressive disclosure, or the gap between "I found this" and "I'm using this"
+        — you're in the right place.
+
+        <details>
+        <summary><strong>bit decomposition</strong></summary>
+
+        | Bit | Value | Meaning |
+        |-----|-------|---------|
+        | `0...` phase | exploration | we're still exploring, not executing |
+        | `.0..` tether | self | focused inward, on our own system |
+        | `..1.` layer | manifestation | this is about making something tangible and visible |
+        | `...0` orientation | intrinsic | looking at the thing itself, not its relation to others |
+
+        **In short:** onboarding lives in the space of _exploring how we manifest the entry point,
+        focused on the thing itself_. It's about the experience we build, not yet how it compares
+        to what others do.
+
+        </details>
+
+  # --- WHERE IS THIS COMING FROM ---
+
+  - type: dropdown
+    id: predecessor
+    attributes:
+      label: Which discussion is this coming from?
+      description: |
+        Depending on which track you're following, this discussion arrives from a different category.
+        Select the one that applies, or "None" if this is a fresh starting point.
+      options:
+        - "None — this is a starting point"
+        - "thought-bubble (0000) — via the-layer"
+        - "napkin-math (0001) — via the-orientation"
+        - "outsiders-forum (0101) — via the-tether"
+        - "validation-framework (1001) — via the-phase"
+    validations:
+      required: true
+
+  - type: input
+    id: predecessor-link
+    attributes:
+      label: Link to predecessor discussion
+      description: "Paste the URL of the discussion this is continuing from, if applicable."
+      placeholder: "https://github.com/orgs/khaaliDimaag/discussions/..."
+    validations:
+      required: false
+
+  # --- TRACK CONTEXT ---
+
+  - type: dropdown
+    id: track
+    attributes:
+      label: Which track is this following?
+      description: |
+        The track determines the order in which a feature moves through discussion categories.
+        If unsure, "the-orientation" is the default.
+      options:
+        - "the-orientation (intrinsic → extrinsic) — default"
+        - "the-phase (exploration → execution)"
+        - "the-tether (self → world)"
+        - "the-layer (foundational → manifestation)"
+        - "Not following a specific track"
+    validations:
+      required: true
+
+  # --- CORE OF THE POST ---
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## The Onboarding Discussion
+
+  - type: textarea
+    id: context
+    attributes:
+      label: What are we onboarding users to?
+      description: |
+        Describe the feature, product, or system that users need to be onboarded to.
+        What does it do? What state is it in? Link to relevant discussions or docs.
+      placeholder: "Briefly describe the thing users will encounter and what they need to understand to start using it."
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-friction
+    attributes:
+      label: Where is the friction today?
+      description: |
+        What's hard, confusing, or invisible right now? Where do users get stuck,
+        give up, or need hand-holding? If this is a new feature, what friction do
+        you anticipate?
+      placeholder: "Describe the pain points, gaps, or barriers users face (or will face)."
+    validations:
+      required: true
+
+  - type: textarea
+    id: onboarding-strategy
+    attributes:
+      label: Proposed onboarding strategy
+      description: |
+        How should we reduce the friction described above? Think about:
+        discovery (how do they find it?), first contact (what do they see first?),
+        progressive disclosure (what do they learn and when?), and the "aha moment"
+        (when does it click?).
+      placeholder: |
+        Consider:
+        - What's the entry point?
+        - What's the minimum a user needs to know to start?
+        - What can be deferred to later?
+        - What should be invisible vs. explicit?
+    validations:
+      required: false
+
+  - type: textarea
+    id: user-assumptions
+    attributes:
+      label: Who is the user and what do they already know?
+      description: |
+        What are we assuming about the user's background? Are they crypto-native?
+        Developers? Non-technical? Coming from a specific platform or mental model?
+      placeholder: "Describe the target user's knowledge, expectations, and context."
+    validations:
+      required: false
+
+  - type: textarea
+    id: open-questions
+    attributes:
+      label: Open questions
+      description: "What's unresolved? What do you need input on?"
+      placeholder: "List any uncertainties, trade-offs, or decisions that need community input."
+    validations:
+      required: false
+
+  - type: textarea
+    id: free-space
+    attributes:
+      label: Anything else
+      description: "Anything that doesn't fit above — references, sketches, tangents, vibes."
+    validations:
+      required: false
+
+  # --- RELATION TO KDIO DISCUSSION FORMAT ---
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        <details>
+        <summary><strong>Relation to KDIO Discussion Format</strong></summary>
+
+        The following sections help connect this discussion to the broader deliberation system.
+        They're optional but help maintain traceability across categories.
+
+        **Where onboarding sits in each track:**
+
+        | Track | Comes after | → **onboarding** → | Goes to |
+        |-------|-------------|---------------------|---------|
+        | the-phase | validation-framework (1001) | `0010` | user-experience (1010) |
+        | the-tether | outsiders-forum (0101) | `0010` | marketing-stunts (0110) |
+        | the-layer | thought-bubble (0000) | `0010` | napkin-math (0001) |
+        | the-orientation | napkin-math (0001) | `0010` | context-switch (0011) |
+
+        **Bit-flip neighbors** (one bit away from `0010`):
+        - `0000` thought-bubble — _what it is vs how they find it_ (layer theme)
+        - `0011` context-switch — _native context vs foreign context_ (orientation theme)
+        - `0110` marketing-stunts — _pulling users in vs reaching out_ (tether theme)
+        - `1010` user-experience — _from entry point to entire path_ (phase theme)
+
+        </details>
+
+  - type: checkboxes
+    id: related-categories
+    attributes:
+      label: Could this discussion also belong in...
+      description: "Check any categories where this discussion has significant overlap."
+      options:
+        - label: "thought-bubble (0000) — the underlying idea hasn't been fully explored yet"
+        - label: "context-switch (0011) — this involves onboarding into a different domain"
+        - label: "marketing-stunts (0110) — the onboarding strategy overlaps with positioning"
+        - label: "user-experience (1010) — this extends beyond onboarding into the full user journey"
+
+  - type: input
+    id: bit-fit-phase
+    attributes:
+      label: "How does this fit the phase bit? (exploration vs execution)"
+      description: "One line — is this discussion still exploring onboarding ideas, or defining concrete steps?"
+      placeholder: "e.g., Still exploring different approaches to wallet onboarding"
+    validations:
+      required: false
+
+  - type: input
+    id: bit-fit-tether
+    attributes:
+      label: "How does this fit the tether bit? (self vs world)"
+      description: "One line — is this focused on our own system, or how users in the world encounter it?"
+      placeholder: "e.g., Focused on our internal flow, not yet considering external discovery"
+    validations:
+      required: false
+
+  - type: input
+    id: bit-fit-layer
+    attributes:
+      label: "How does this fit the layer bit? (foundational vs manifestation)"
+      description: "One line — is this about the tangible user-facing experience?"
+      placeholder: "e.g., Yes, this is about the visible first-run experience"
+    validations:
+      required: false
+
+  - type: input
+    id: bit-fit-orientation
+    attributes:
+      label: "How does this fit the orientation bit? (intrinsic vs extrinsic)"
+      description: "One line — is this about the onboarding itself, or how it relates to other things?"
+      placeholder: "e.g., Focused on the onboarding flow itself, not comparing to competitors"
+    validations:
+      required: false
